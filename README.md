@@ -1,17 +1,22 @@
-# my_first_app
+# My First App
 
-A new Flutter project.
+A simple Flutter Material app that displays a centered greeting and a subtitle.
+The app also logs the current screen width in logical pixels to the debug console.
 
-## Getting Started
+## Run and test
 
-This project is a starting point for a Flutter application.
+```shell
+flutter pub get
+flutter test
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Android setup
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Android command-line tools are still being installed on the development machine,
+and no physical phone was connected during setup. Once installation is complete,
+connect and unlock the phone, enable USB debugging in Developer options, and
+accept the USB debugging authorization prompt. Then use `flutter devices` to
+find the device and `flutter run -d <device-id>` to launch the app.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Screenshots will be saved in the `screenshots` folder when a device is available.
